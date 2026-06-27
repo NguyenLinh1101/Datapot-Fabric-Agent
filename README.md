@@ -22,7 +22,7 @@ README.md           # File này
 |---|---|---|---|
 | 1 | [docs/data-investigation.md](docs/data-investigation.md) | Cấu trúc, quan hệ, profiling từng bảng, quan sát nghiệp vụ, KPI khả thi, Assumptions, câu hỏi cho stakeholder | ✅ Hoàn thành (Bước 1) |
 | 2 | [docs/data-quality-report.md](docs/data-quality-report.md) | Danh sách vấn đề chất lượng dữ liệu, phân loại mức độ, nguyên nhân & khuyến nghị | ✅ Hoàn thành (Bước 1) |
-| — | Business Glossary | Định nghĩa khái niệm nghiệp vụ VanArsdel | ⏳ Bước sau |
+| 3 | [docs/business-glossary.md](docs/business-glossary.md) | Định nghĩa khái niệm nghiệp vụ VanArsdel (ngôn ngữ stakeholder) | ✅ Hoàn thành (Bước 2) |
 | — | Data Dictionary | Mô tả bảng/cột/quan hệ theo template | ⏳ Bước sau |
 | — | BRD + Report Spec + Mockup | Đặc tả để handoff cho DA | ⏳ Bước sau |
 
