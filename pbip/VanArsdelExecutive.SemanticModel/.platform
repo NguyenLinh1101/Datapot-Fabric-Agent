@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "VanArsdel Executive"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "bb78e336-1951-4280-9c7f-0f79ae13a9ca"
+  }
+}

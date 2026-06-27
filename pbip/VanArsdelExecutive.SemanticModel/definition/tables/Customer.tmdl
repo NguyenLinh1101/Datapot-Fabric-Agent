@@ -1,0 +1,44 @@
+table Customer
+	lineageTag: a604ce4e-bec6-4f6f-9afd-825ad54ff1b2
+
+	column CustomerID
+		dataType: string
+		isHidden
+		lineageTag: 3a38d65d-9ce9-4931-bd6a-514b24d8355d
+		summarizeBy: none
+		sourceColumn: CustomerID
+
+		annotation SummarizationSetBy = Automatic
+
+	column ZipCode
+		dataType: string
+		isHidden
+		lineageTag: 0f6087d8-a43a-4bb8-a5e2-21ab72d10354
+		summarizeBy: none
+		sourceColumn: ZipCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Email Name'
+		dataType: string
+		lineageTag: 63ccb90c-59ba-4401-b5c9-9cd57000f279
+		summarizeBy: none
+		sourceColumn: Email Name
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Customer = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "\Customer.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {
+						{"CustomerID", type text},
+						{"ZipCode", type text},
+						{"Email Name", type text}
+				    })
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table

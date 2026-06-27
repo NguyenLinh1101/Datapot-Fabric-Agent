@@ -1,0 +1,115 @@
+table Date
+	lineageTag: 5c25d142-d3a1-440f-bb93-e251c70d827b
+	dataCategory: Time
+
+	column Date
+		dataType: dateTime
+		isKey
+		formatString: dd mmm yyyy
+		lineageTag: 3e115511-43d6-48dd-bac4-cd9f683d849f
+		summarizeBy: none
+		sourceColumn: Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Year
+		dataType: int64
+		lineageTag: 560249d6-a754-46df-8e96-cfb7026a5934
+		summarizeBy: none
+		sourceColumn: Year
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quarter
+		dataType: string
+		lineageTag: 0172115f-fe82-49d2-9c31-9a3cbef1bb07
+		summarizeBy: none
+		sourceColumn: Quarter
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Year Quarter'
+		dataType: string
+		lineageTag: 43f1b2b1-be4c-451a-b56a-54b0c08ebe6d
+		summarizeBy: none
+		sourceColumn: YearQuarter
+
+		annotation SummarizationSetBy = Automatic
+
+	column Month
+		dataType: string
+		lineageTag: 90c2ddfb-4d7f-4fbc-b043-34065659ebf4
+		summarizeBy: none
+		sourceColumn: Month
+		sortByColumn: 'Month ID'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month Name'
+		dataType: string
+		lineageTag: 7f68a5d7-8cef-4689-bc9e-f9a03ea3f5d3
+		summarizeBy: none
+		sourceColumn: MonthName
+		sortByColumn: 'Month Number'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month Number'
+		dataType: int64
+		isHidden
+		lineageTag: 698c70c8-c726-46aa-b969-7088535511a2
+		summarizeBy: none
+		sourceColumn: MonthNo
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month ID'
+		dataType: int64
+		isHidden
+		lineageTag: b8a1a258-3e57-4839-8116-637fbddd22a3
+		summarizeBy: none
+		sourceColumn: MonthID
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Calendar Hierarchy'
+		lineageTag: 496d2edd-86da-429a-9c12-e7a672f18e40
+
+		level Year
+			lineageTag: 83ab6414-b014-48c8-b8b0-1d13243c65e2
+			column: Year
+
+		level Quarter
+			lineageTag: 44003320-587c-43dc-be9f-5e855855d0a9
+			column: Quarter
+
+		level Month
+			lineageTag: a04122fd-61f7-43c5-a74c-7993259e7ac0
+			column: 'Month Name'
+
+		level Date
+			lineageTag: 87b92069-cace-4c3f-8bb9-a5ea9b496e94
+			column: Date
+
+	partition Date = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "\Date.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {
+						{"Date", type date},
+						{"Year", Int64.Type},
+						{"Quarter", type text},
+						{"YearQuarter", type text},
+						{"Month", type text},
+						{"MonthName", type text},
+						{"MonthNo", Int64.Type},
+						{"MonthID", Int64.Type}
+				    })
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table

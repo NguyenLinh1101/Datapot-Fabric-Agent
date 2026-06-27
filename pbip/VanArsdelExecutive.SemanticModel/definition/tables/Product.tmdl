@@ -1,0 +1,82 @@
+table Product
+	lineageTag: 91d6b77c-9ae7-483d-9dcd-6d59151a8cb2
+
+	column ProductID
+		dataType: int64
+		isHidden
+		lineageTag: f83313f5-3606-40a8-8926-b66e3d9090c8
+		summarizeBy: none
+		sourceColumn: ProductID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Product
+		dataType: string
+		lineageTag: 2314b626-8a14-40ba-8b6c-b5ac675bace8
+		summarizeBy: none
+		sourceColumn: Product
+
+		annotation SummarizationSetBy = Automatic
+
+	column Category
+		dataType: string
+		lineageTag: 3f96133d-0649-4752-bbf8-193b931786aa
+		summarizeBy: none
+		sourceColumn: Category
+
+		annotation SummarizationSetBy = Automatic
+
+	column Segment
+		dataType: string
+		lineageTag: 905776a3-b158-4af2-ad4c-cf80683d288e
+		summarizeBy: none
+		sourceColumn: Segment
+
+		annotation SummarizationSetBy = Automatic
+
+	column Manufacturer
+		dataType: string
+		lineageTag: 176ba56c-6dc2-4784-80e3-4c8e1180a9d8
+		summarizeBy: none
+		sourceColumn: Manufacturer
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Unit Cost'
+		dataType: double
+		formatString: #,##0.00
+		lineageTag: bad63d01-8816-439d-9e08-c60d645de86e
+		summarizeBy: none
+		sourceColumn: Unit Cost
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Unit Price'
+		dataType: double
+		formatString: #,##0.00
+		lineageTag: 184ef977-18e0-42b0-9d5b-ea7d8ac93319
+		summarizeBy: none
+		sourceColumn: Unit Price
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Product = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "\Product.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {
+						{"ProductID", Int64.Type},
+						{"Product", type text},
+						{"Category", type text},
+						{"Segment", type text},
+						{"ManufacturerID", Int64.Type},
+						{"Manufacturer", type text},
+						{"Unit Cost", type number},
+						{"Unit Price", type number}
+				    })
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table

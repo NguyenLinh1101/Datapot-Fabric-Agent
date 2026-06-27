@@ -1,0 +1,103 @@
+table Budget_Forecast
+	lineageTag: 097e45ce-e3ca-4c4a-b3fd-90c924007b31
+
+	column Type
+		dataType: string
+		lineageTag: 317b8ea2-ef8c-42e0-b8a7-e1d869b596a8
+		summarizeBy: none
+		sourceColumn: Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year
+		dataType: int64
+		isHidden
+		lineageTag: bfdf7298-5ada-4978-8cd6-2ba2645deea0
+		summarizeBy: none
+		sourceColumn: Year
+
+		annotation SummarizationSetBy = Automatic
+
+	column Month
+		dataType: string
+		isHidden
+		lineageTag: 0cd097bf-7e1a-41d4-88ee-acfdb3b2ed2c
+		summarizeBy: none
+		sourceColumn: Month
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month Number'
+		dataType: int64
+		isHidden
+		lineageTag: fee5d08b-6ab7-455f-983f-6d74525e22a7
+		summarizeBy: none
+		sourceColumn: MonthNo
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month ID'
+		dataType: int64
+		isHidden
+		lineageTag: ff6e9704-020f-4f7b-94fe-e13c8d81abee
+		summarizeBy: none
+		sourceColumn: MonthID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Category
+		dataType: string
+		lineageTag: c345633b-a92e-4425-bd89-e7e13435d6ba
+		summarizeBy: none
+		sourceColumn: Category
+
+		annotation SummarizationSetBy = Automatic
+
+	column Segment
+		dataType: string
+		lineageTag: 0bda51c9-21b1-4327-893a-15f97de57e45
+		summarizeBy: none
+		sourceColumn: Segment
+
+		annotation SummarizationSetBy = Automatic
+
+	column Value
+		dataType: double
+		formatString: #,##0
+		lineageTag: abc05683-9bd2-454e-a878-1e979a8a6427
+		summarizeBy: sum
+		sourceColumn: Value
+
+		annotation SummarizationSetBy = Automatic
+
+	column BudgetDate = DATE ( Budget_Forecast[Year], Budget_Forecast[Month Number], 1 )
+		isHidden
+		dataType: dateTime
+		formatString: dd mmm yyyy
+		lineageTag: 270ae45e-a472-495a-a3c0-9b8375dc0a01
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition Budget_Forecast = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "\Budget_Forecast.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {
+						{"Type", type text},
+						{"Year", Int64.Type},
+						{"Month", type text},
+						{"MonthNo", Int64.Type},
+						{"MonthID", Int64.Type},
+						{"Category", type text},
+						{"Segment", type text},
+						{"Value", type number}
+				    })
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table

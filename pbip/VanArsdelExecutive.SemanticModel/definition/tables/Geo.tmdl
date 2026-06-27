@@ -1,0 +1,73 @@
+table Geo
+	lineageTag: dde83b7c-d337-469c-b116-0581e0863b9d
+
+	column Zip
+		dataType: string
+		isHidden
+		lineageTag: db7cb319-1d8a-4084-8c74-5a3765e5ecb2
+		summarizeBy: none
+		sourceColumn: Zip
+
+		annotation SummarizationSetBy = Automatic
+
+	column City
+		dataType: string
+		lineageTag: e26bc1b0-00ca-4be6-9e27-b5b7ade3ed9f
+		summarizeBy: none
+		sourceColumn: City
+		dataCategory: City
+
+		annotation SummarizationSetBy = Automatic
+
+	column State
+		dataType: string
+		lineageTag: cf2cf0cf-729e-43f8-87ec-281f1ec2ebf9
+		summarizeBy: none
+		sourceColumn: State
+		dataCategory: StateOrProvince
+
+		annotation SummarizationSetBy = Automatic
+
+	column Region
+		dataType: string
+		lineageTag: 66e958c2-d6a6-481f-a346-79055a03bf39
+		summarizeBy: none
+		sourceColumn: Region
+
+		annotation SummarizationSetBy = Automatic
+
+	column District
+		dataType: string
+		lineageTag: 0a3f0d44-be0f-4299-9c8e-c637f1739581
+		summarizeBy: none
+		sourceColumn: District
+
+		annotation SummarizationSetBy = Automatic
+
+	column Country
+		dataType: string
+		lineageTag: 2ec0358b-0e68-42d3-a2c3-92204927fb96
+		summarizeBy: none
+		sourceColumn: Country
+		dataCategory: Country
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Geo = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "\Geo.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {
+						{"Zip", type text},
+						{"City", type text},
+						{"State", type text},
+						{"Region", type text},
+						{"District", type text},
+						{"Country", type text}
+				    })
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table

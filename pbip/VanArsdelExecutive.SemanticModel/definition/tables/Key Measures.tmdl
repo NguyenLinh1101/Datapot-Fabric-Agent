@@ -1,0 +1,77 @@
+table 'Key Measures'
+	lineageTag: d49fd3c5-29a7-4dfe-8542-33ce80cbe79b
+
+	measure 'Units Sold' = SUM ( Sales[Units] )
+		formatString: #,##0
+		displayFolder: 01 Sales
+		lineageTag: 3241b80c-5bae-4838-92f9-827288945e2d
+
+	measure Revenue = SUMX ( Sales, Sales[Units] * RELATED ( Product[Unit Price] ) )
+		formatString: #,##0
+		displayFolder: 01 Sales
+		lineageTag: e9cefe1b-2cf3-4217-a58f-9ea5df952b7f
+
+	measure 'Average Selling Price' = DIVIDE ( [Revenue], [Units Sold] )
+		formatString: #,##0.00
+		displayFolder: 01 Sales
+		lineageTag: 5d242161-aa7c-4ef7-b88c-2552e9ccc628
+
+	measure 'Active Customers' = DISTINCTCOUNT ( Sales[CustomerID] )
+		formatString: #,##0
+		displayFolder: 01 Sales
+		lineageTag: 9f021b2e-5151-4108-b633-960a316bba80
+
+	measure COGS = SUMX ( Sales, Sales[Units] * RELATED ( Product[Unit Cost] ) )
+		formatString: #,##0
+		displayFolder: 02 Profitability
+		isHidden
+		lineageTag: d07458bb-44b3-4ad3-9b28-dbe845ff018d
+
+	measure 'Gross Profit' = [Revenue] - [COGS]
+		formatString: #,##0
+		displayFolder: 02 Profitability
+		lineageTag: fd8e26aa-486c-4886-ab20-419b929e657a
+
+	measure 'Gross Margin %' = DIVIDE ( [Gross Profit], [Revenue] )
+		formatString: 0.0%
+		displayFolder: 02 Profitability
+		lineageTag: faca1a3c-f220-40bf-8032-831406429b4d
+
+	measure Budget = CALCULATE ( SUM ( Budget_Forecast[Value] ), Budget_Forecast[Type] = "Budget" )
+		formatString: #,##0
+		displayFolder: 03 Plan vs Actual
+		lineageTag: cbbc5200-b700-48e5-8e98-759c6b0c1435
+
+	measure Forecast = CALCULATE ( SUM ( Budget_Forecast[Value] ), Budget_Forecast[Type] = "Forecast" )
+		formatString: #,##0
+		displayFolder: 03 Plan vs Actual
+		lineageTag: 9cd92984-68c1-4103-982a-17a4af63b447
+
+	measure 'Budget Attainment %' = DIVIDE ( [Revenue], [Budget] )
+		formatString: 0.0%
+		displayFolder: 03 Plan vs Actual
+		lineageTag: 3a29fa8e-6170-4389-b396-e2b4553e1555
+
+	measure 'Forecast Variance' = [Revenue] - [Forecast]
+		formatString: #,##0
+		displayFolder: 03 Plan vs Actual
+		lineageTag: 3b85db1a-1bde-4f08-baf5-74402912a768
+
+	measure 'Forecast Variance %' = DIVIDE ( [Revenue] - [Forecast], [Forecast] )
+		formatString: 0.0%
+		displayFolder: 03 Plan vs Actual
+		lineageTag: a7a7e4e5-406c-4445-b081-82a87d1e07e7
+
+	measure 'Revenue PY' = CALCULATE ( [Revenue], DATEADD ( 'Date'[Date], -1, YEAR ) )
+		formatString: #,##0
+		displayFolder: 04 Time Intelligence
+		lineageTag: 63e2a271-1d6f-479a-b046-880fa42826eb
+
+	measure 'YoY Growth %' = DIVIDE ( [Revenue] - [Revenue PY], [Revenue PY] )
+		formatString: 0.0%
+		displayFolder: 04 Time Intelligence
+		lineageTag: 6c250551-6327-44d1-a515-a39782a2765d
+
+	partition 'Key Measures' = calculated
+		mode: import
+		source = {BLANK()}

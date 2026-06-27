@@ -1,0 +1,43 @@
+table Campaign
+	lineageTag: f0e05c7d-eaa3-4a51-a625-6f09ab2e1a33
+
+	column CampaignID
+		dataType: int64
+		isHidden
+		lineageTag: 1b41b752-daba-4134-b8f1-27d9512e058b
+		summarizeBy: none
+		sourceColumn: CampaignID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Traffic Channel'
+		dataType: string
+		lineageTag: bfadca2f-f868-4823-a699-661f476334d2
+		summarizeBy: none
+		sourceColumn: TrafficChannel
+
+		annotation SummarizationSetBy = Automatic
+
+	column Device
+		dataType: string
+		lineageTag: 1fc7aed2-5aa7-4034-bd5b-5309369e7881
+		summarizeBy: none
+		sourceColumn: Device
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Campaign = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "\Campaign.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {
+						{"CampaignID", Int64.Type},
+						{"TrafficChannel", type text},
+						{"Device", type text}
+				    })
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table
