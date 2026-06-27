@@ -1,10 +1,10 @@
 table Geo
-	lineageTag: dde83b7c-d337-469c-b116-0581e0863b9d
+	lineageTag: 5fcd241b-2389-4246-a411-8ad9c801d2a9
 
 	column Zip
 		dataType: string
 		isHidden
-		lineageTag: db7cb319-1d8a-4084-8c74-5a3765e5ecb2
+		lineageTag: f4c7f372-62ab-48d0-b85c-be6f12ae0ae8
 		summarizeBy: none
 		sourceColumn: Zip
 
@@ -12,7 +12,7 @@ table Geo
 
 	column City
 		dataType: string
-		lineageTag: e26bc1b0-00ca-4be6-9e27-b5b7ade3ed9f
+		lineageTag: 9bfaaa59-bcf2-4427-a66f-9ec59993b627
 		summarizeBy: none
 		sourceColumn: City
 		dataCategory: City
@@ -21,7 +21,7 @@ table Geo
 
 	column State
 		dataType: string
-		lineageTag: cf2cf0cf-729e-43f8-87ec-281f1ec2ebf9
+		lineageTag: c8ab30a6-9240-437a-a871-981b1b333460
 		summarizeBy: none
 		sourceColumn: State
 		dataCategory: StateOrProvince
@@ -30,7 +30,7 @@ table Geo
 
 	column Region
 		dataType: string
-		lineageTag: 66e958c2-d6a6-481f-a346-79055a03bf39
+		lineageTag: 4bc80e2f-1dd2-4beb-a055-4189ef36ca45
 		summarizeBy: none
 		sourceColumn: Region
 
@@ -38,7 +38,7 @@ table Geo
 
 	column District
 		dataType: string
-		lineageTag: 0a3f0d44-be0f-4299-9c8e-c637f1739581
+		lineageTag: 233bb95d-aca6-4510-99eb-ea538059a214
 		summarizeBy: none
 		sourceColumn: District
 
@@ -46,7 +46,7 @@ table Geo
 
 	column Country
 		dataType: string
-		lineageTag: 2ec0358b-0e68-42d3-a2c3-92204927fb96
+		lineageTag: b7ddb0bb-75dc-4f4e-9827-aded7fa069da
 		summarizeBy: none
 		sourceColumn: Country
 		dataCategory: Country

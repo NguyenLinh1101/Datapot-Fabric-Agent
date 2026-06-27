@@ -1,10 +1,10 @@
 table Product
-	lineageTag: 91d6b77c-9ae7-483d-9dcd-6d59151a8cb2
+	lineageTag: 17bc4073-021a-4ced-811d-35da71d46ec5
 
 	column ProductID
 		dataType: int64
 		isHidden
-		lineageTag: f83313f5-3606-40a8-8926-b66e3d9090c8
+		lineageTag: 2b97d238-d3b2-42a1-9c1d-7f4d0029e7fe
 		summarizeBy: none
 		sourceColumn: ProductID
 
@@ -12,7 +12,7 @@ table Product
 
 	column Product
 		dataType: string
-		lineageTag: 2314b626-8a14-40ba-8b6c-b5ac675bace8
+		lineageTag: 8edd3fc2-1304-4665-8e1c-d63d52ba2f3b
 		summarizeBy: none
 		sourceColumn: Product
 
@@ -20,7 +20,7 @@ table Product
 
 	column Category
 		dataType: string
-		lineageTag: 3f96133d-0649-4752-bbf8-193b931786aa
+		lineageTag: 8debce62-9b41-484a-82e2-ae8bcbe2bff5
 		summarizeBy: none
 		sourceColumn: Category
 
@@ -28,7 +28,7 @@ table Product
 
 	column Segment
 		dataType: string
-		lineageTag: 905776a3-b158-4af2-ad4c-cf80683d288e
+		lineageTag: 45af8970-614f-4cc3-9633-161c30b71f45
 		summarizeBy: none
 		sourceColumn: Segment
 
@@ -36,7 +36,7 @@ table Product
 
 	column Manufacturer
 		dataType: string
-		lineageTag: 176ba56c-6dc2-4784-80e3-4c8e1180a9d8
+		lineageTag: 4520a9fa-c69a-4695-afd1-4a1d8da7d81b
 		summarizeBy: none
 		sourceColumn: Manufacturer
 
@@ -45,7 +45,7 @@ table Product
 	column 'Unit Cost'
 		dataType: double
 		formatString: #,##0.00
-		lineageTag: bad63d01-8816-439d-9e08-c60d645de86e
+		lineageTag: 44f6b472-349e-42e4-92c4-99fd64b68e39
 		summarizeBy: none
 		sourceColumn: Unit Cost
 
@@ -54,7 +54,7 @@ table Product
 	column 'Unit Price'
 		dataType: double
 		formatString: #,##0.00
-		lineageTag: 184ef977-18e0-42b0-9d5b-ea7d8ac93319
+		lineageTag: dcb58251-3278-4829-9206-6f0e3e3a54bc
 		summarizeBy: none
 		sourceColumn: Unit Price
 

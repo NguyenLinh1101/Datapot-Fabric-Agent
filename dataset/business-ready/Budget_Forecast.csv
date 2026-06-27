@@ -1,0 +1,325 @@
+Type,Year,Month,MonthNo,MonthID,Category,Segment,Value
+Forecast,2021,Dec,12,202112,Accessory,Accessory,44190.57888
+Forecast,2021,Dec,12,202112,Mix,All Season,11442.14474
+Forecast,2021,Dec,12,202112,Mix,Productivity,19538.89812
+Forecast,2021,Dec,12,202112,Rural,Select,311.708775
+Forecast,2021,Dec,12,202112,Urban,Convenience,120710.4406
+Forecast,2021,Dec,12,202112,Urban,Extreme,20868.84072
+Forecast,2021,Dec,12,202112,Urban,Moderation,251155.7122
+Forecast,2021,Dec,12,202112,Urban,Regular,689.7969225
+Forecast,2021,Dec,12,202112,Youth,Youth,3931.03074
+Forecast,2021,Nov,11,202111,Accessory,Accessory,50598.81566
+Forecast,2021,Nov,11,202111,Mix,All Season,14120.78693
+Forecast,2021,Nov,11,202111,Mix,Productivity,17597.55926
+Forecast,2021,Nov,11,202111,Rural,Select,172.2601125
+Forecast,2021,Nov,11,202111,Urban,Convenience,129923.2814
+Forecast,2021,Nov,11,202111,Urban,Extreme,46971.33037
+Forecast,2021,Nov,11,202111,Urban,Moderation,322984.2215
+Forecast,2021,Nov,11,202111,Urban,Regular,427.4372025
+Forecast,2021,Nov,11,202111,Youth,Youth,2891.005425
+Forecast,2021,Oct,10,202110,Accessory,Accessory,54740.5709
+Forecast,2021,Oct,10,202110,Mix,All Season,18109.64804
+Forecast,2021,Oct,10,202110,Mix,Productivity,22835.18396
+Forecast,2021,Oct,10,202110,Rural,Select,662.79129
+Forecast,2021,Oct,10,202110,Urban,Convenience,169468.7696
+Forecast,2021,Oct,10,202110,Urban,Extreme,70793.02886
+Forecast,2021,Oct,10,202110,Urban,Moderation,362385.6466
+Forecast,2021,Oct,10,202110,Urban,Regular,2989.28376
+Forecast,2021,Oct,10,202110,Youth,Youth,5397.748965
+Forecast,2021,Sep,9,202109,Accessory,Accessory,64442.9079
+Forecast,2021,Sep,9,202109,Mix,All Season,26737.36704
+Forecast,2021,Sep,9,202109,Mix,Productivity,25557.336
+Forecast,2021,Sep,9,202109,Rural,Select,314.98992
+Forecast,2021,Sep,9,202109,Urban,Convenience,219703.7363
+Forecast,2021,Sep,9,202109,Urban,Extreme,11957.87523
+Forecast,2021,Sep,9,202109,Urban,Moderation,529188.1249
+Forecast,2021,Sep,9,202109,Urban,Regular,701.48442
+Forecast,2021,Sep,9,202109,Youth,Youth,6437.887575
+Forecast,2021,Aug,8,202108,Accessory,Accessory,98285.91328
+Forecast,2021,Aug,8,202108,Mix,All Season,37439.93736
+Forecast,2021,Aug,8,202108,Mix,Productivity,34963.40484
+Forecast,2021,Aug,8,202108,Rural,Select,311.708775
+Forecast,2021,Aug,8,202108,Urban,Convenience,333460.8569
+Forecast,2021,Aug,8,202108,Urban,Extreme,10668.924
+Forecast,2021,Aug,8,202108,Urban,Moderation,675144.698
+Forecast,2021,Aug,8,202108,Urban,Regular,731.3103
+Forecast,2021,Aug,8,202108,Youth,Youth,10355.73462
+Forecast,2021,Jul,7,202107,Accessory,Accessory,61545.41064
+Forecast,2021,Jul,7,202107,Mix,All Season,45563.53694
+Forecast,2021,Jul,7,202107,Mix,Productivity,17727.72593
+Forecast,2021,Jul,7,202107,Rural,Select,334.67679
+Forecast,2021,Jul,7,202107,Urban,Convenience,345230.9632
+Forecast,2021,Jul,7,202107,Urban,Extreme,14286.02201
+Forecast,2021,Jul,7,202107,Urban,Moderation,642300.7198
+Forecast,2021,Jul,7,202107,Urban,Regular,1381.096238
+Forecast,2021,Jul,7,202107,Youth,Youth,11738.08624
+Forecast,2021,Jun,6,202106,Accessory,Accessory,91299.65402
+Forecast,2021,Jun,6,202106,Mix,All Season,29301.60844
+Forecast,2021,Jun,6,202106,Mix,Productivity,73468.33494
+Forecast,2021,Jun,6,202106,Rural,Select,167.338395
+Forecast,2021,Jun,6,202106,Urban,Convenience,262211.9656
+Forecast,2021,Jun,6,202106,Urban,Extreme,5340.80274
+Forecast,2021,Jun,6,202106,Urban,Moderation,651766.3129
+Forecast,2021,Jun,6,202106,Urban,Regular,151.17039
+Forecast,2021,Jun,6,202106,Youth,Youth,12144.36878
+Forecast,2021,May,5,202105,Accessory,Accessory,120579.7261
+Forecast,2021,May,5,202105,Mix,All Season,21924.29736
+Forecast,2021,May,5,202105,Mix,Productivity,84037.90264
+Forecast,2021,May,5,202105,Rural,Select,506.9369025
+Forecast,2021,May,5,202105,Urban,Convenience,276318.0256
+Forecast,2021,May,5,202105,Urban,Extreme,7842.956888
+Forecast,2021,May,5,202105,Urban,Moderation,644168.8923
+Forecast,2021,May,5,202105,Urban,Regular,682.89984
+Forecast,2021,May,5,202105,Youth,Youth,8061.734728
+Forecast,2021,Apr,4,202104,Accessory,Accessory,103436.9095
+Forecast,2021,Apr,4,202104,Mix,All Season,31585.12434
+Forecast,2021,Apr,4,202104,Mix,Productivity,87986.91434
+Forecast,2021,Apr,4,202104,Rural,Select,167.338395
+Forecast,2021,Apr,4,202104,Urban,Convenience,351049.3899
+Forecast,2021,Apr,4,202104,Urban,Extreme,12343.00573
+Forecast,2021,Apr,4,202104,Urban,Moderation,714907.2475
+Forecast,2021,Apr,4,202104,Urban,Regular,1028.908721
+Forecast,2021,Apr,4,202104,Youth,Youth,9978.605963
+Forecast,2021,Mar,3,202103,Accessory,Accessory,93558.89718
+Forecast,2021,Mar,3,202103,Mix,All Season,29356.78568
+Forecast,2021,Mar,3,202103,Mix,Productivity,61263.51735
+Forecast,2021,Mar,3,202103,Rural,Select,497.0934675
+Forecast,2021,Mar,3,202103,Urban,Convenience,343660.2303
+Forecast,2021,Mar,3,202103,Urban,Extreme,17582.20144
+Forecast,2021,Mar,3,202103,Urban,Moderation,713162.972
+Forecast,2021,Mar,3,202103,Urban,Regular,395.11395
+Forecast,2021,Mar,3,202103,Youth,Youth,9130.579973
+Forecast,2021,Feb,2,202102,Accessory,Accessory,58793.20125
+Forecast,2021,Feb,2,202102,Mix,All Season,13223.37744
+Forecast,2021,Feb,2,202102,Mix,Productivity,22939.77168
+Forecast,2021,Feb,2,202102,Rural,Select,155.8543875
+Forecast,2021,Feb,2,202102,Urban,Convenience,148965.7223
+Forecast,2021,Feb,2,202102,Urban,Extreme,14749.0644
+Forecast,2021,Feb,2,202102,Urban,Moderation,346228.3122
+Forecast,2021,Feb,2,202102,Urban,Regular,451.677761
+Forecast,2021,Feb,2,202102,Youth,Youth,4669.62426
+Forecast,2021,Jan,1,202101,Accessory,Accessory,51771.46338
+Forecast,2021,Jan,1,202101,Mix,All Season,11388.23805
+Forecast,2021,Jan,1,202101,Mix,Productivity,18791.90523
+Forecast,2021,Jan,1,202101,Rural,Select,337.957935
+Forecast,2021,Jan,1,202101,Urban,Convenience,121859.4459
+Forecast,2021,Jan,1,202101,Urban,Extreme,18247.11252
+Forecast,2021,Jan,1,202101,Urban,Moderation,292661.6849
+Forecast,2021,Jan,1,202101,Urban,Regular,405.25947
+Forecast,2021,Jan,1,202101,Youth,Youth,2757.295065
+Budget,2021,Dec,12,202112,Accessory,Accessory,44650.89741
+Budget,2021,Dec,12,202112,Mix,All Season,11206.22423
+Budget,2021,Dec,12,202112,Mix,Productivity,19538.89812
+Budget,2021,Dec,12,202112,Rural,Select,324.833355
+Budget,2021,Dec,12,202112,Urban,Convenience,125587.6301
+Budget,2021,Dec,12,202112,Urban,Extreme,20868.84072
+Budget,2021,Dec,12,202112,Urban,Moderation,243695.6416
+Budget,2021,Dec,12,202112,Urban,Regular,676.1375775
+Budget,2021,Dec,12,202112,Youth,Youth,3796.895518
+Budget,2021,Nov,11,202111,Accessory,Accessory,47651.31184
+Budget,2021,Nov,11,202111,Mix,All Season,14536.10419
+Budget,2021,Nov,11,202111,Mix,Productivity,15921.60124
+Budget,2021,Nov,11,202111,Rural,Select,172.2601125
+Budget,2021,Nov,11,202111,Urban,Convenience,127350.5431
+Budget,2021,Nov,11,202111,Urban,Extreme,47574.88219
+Budget,2021,Nov,11,202111,Urban,Moderation,322984.2215
+Budget,2021,Nov,11,202111,Urban,Regular,427.4372025
+Budget,2021,Nov,11,202111,Youth,Youth,3066.217875
+Budget,2021,Oct,10,202110,Accessory,Accessory,57562.24982
+Budget,2021,Oct,10,202110,Mix,All Season,17736.25324
+Budget,2021,Oct,10,202110,Mix,Productivity,21795.01947
+Budget,2021,Oct,10,202110,Rural,Select,623.41755
+Budget,2021,Oct,10,202110,Urban,Convenience,161079.2266
+Budget,2021,Oct,10,202110,Urban,Extreme,73028.5982
+Budget,2021,Oct,10,202110,Urban,Moderation,351292.2084
+Budget,2021,Oct,10,202110,Urban,Regular,3060.909967
+Budget,2021,Oct,10,202110,Youth,Youth,5503.58718
+Budget,2021,Sep,9,202109,Accessory,Accessory,61940.2707
+Budget,2021,Sep,9,202109,Mix,All Season,26081.97554
+Budget,2021,Sep,9,202109,Mix,Productivity,26356.00275
+Budget,2021,Sep,9,202109,Rural,Select,324.833355
+Budget,2021,Sep,9,202109,Urban,Convenience,221968.7233
+Budget,2021,Sep,9,202109,Urban,Extreme,12323.93264
+Budget,2021,Sep,9,202109,Urban,Moderation,503746.3881
+Budget,2021,Sep,9,202109,Urban,Regular,701.48442
+Budget,2021,Sep,9,202109,Youth,Youth,6836.107425
+Budget,2021,Aug,8,202108,Accessory,Accessory,94148.85816
+Budget,2021,Aug,8,202108,Mix,All Season,40559.93214
+Budget,2021,Aug,8,202108,Mix,Productivity,31937.72558
+Budget,2021,Aug,8,202108,Rural,Select,314.98992
+Budget,2021,Aug,8,202108,Urban,Convenience,343268.5292
+Budget,2021,Aug,8,202108,Urban,Extreme,10668.924
+Budget,2021,Aug,8,202108,Urban,Moderation,682251.4843
+Budget,2021,Aug,8,202108,Urban,Regular,682.55628
+Budget,2021,Aug,8,202108,Youth,Youth,9746.57376
+Budget,2021,Jul,7,202107,Accessory,Accessory,63468.70472
+Budget,2021,Jul,7,202107,Mix,All Season,46010.23828
+Budget,2021,Jul,7,202107,Mix,Productivity,16377.04205
+Budget,2021,Jul,7,202107,Rural,Select,318.271065
+Budget,2021,Jul,7,202107,Urban,Convenience,327806.3502
+Budget,2021,Jul,7,202107,Urban,Extreme,14851.80506
+Budget,2021,Jul,7,202107,Urban,Moderation,648597.7856
+Budget,2021,Jul,7,202107,Urban,Regular,1289.023155
+Budget,2021,Jul,7,202107,Youth,Youth,12479.43905
+Budget,2021,Jun,6,202106,Accessory,Accessory,94988.52893
+Budget,2021,Jun,6,202106,Mix,All Season,30509.92219
+Budget,2021,Jun,6,202106,Mix,Productivity,67110.49826
+Budget,2021,Jun,6,202106,Rural,Select,157.49496
+Budget,2021,Jun,6,202106,Urban,Convenience,261009.5613
+Budget,2021,Jun,6,202106,Urban,Extreme,5392.156613
+Budget,2021,Jun,6,202106,Urban,Moderation,664630.6724
+Budget,2021,Jun,6,202106,Urban,Regular,148.08528
+Budget,2021,Jun,6,202106,Youth,Youth,12505.0926
+Budget,2021,May,5,202105,Accessory,Accessory,124810.8389
+Budget,2021,May,5,202105,Mix,All Season,21924.29736
+Budget,2021,May,5,202105,Mix,Productivity,80836.45873
+Budget,2021,May,5,202105,Rural,Select,477.4065975
+Budget,2021,May,5,202105,Urban,Convenience,263033.5052
+Budget,2021,May,5,202105,Urban,Extreme,7462.230825
+Budget,2021,May,5,202105,Urban,Moderation,637527.9758
+Budget,2021,May,5,202105,Urban,Regular,682.89984
+Budget,2021,May,5,202105,Youth,Youth,8170.086015
+Budget,2021,Apr,4,202104,Accessory,Accessory,98415.70032
+Budget,2021,Apr,4,202104,Mix,All Season,33499.3743
+Budget,2021,Apr,4,202104,Mix,Productivity,85873.30164
+Budget,2021,Apr,4,202104,Rural,Select,162.4166775
+Budget,2021,Apr,4,202104,Urban,Convenience,330989.4247
+Budget,2021,Apr,4,202104,Urban,Extreme,12709.62966
+Budget,2021,Apr,4,202104,Urban,Moderation,767584.6236
+Budget,2021,Apr,4,202104,Urban,Regular,1036.230458
+Budget,2021,Apr,4,202104,Youth,Youth,11028.98554
+Budget,2021,Mar,3,202103,Accessory,Accessory,95393.38536
+Budget,2021,Mar,3,202103,Mix,All Season,29659.43295
+Budget,2021,Mar,3,202103,Mix,Productivity,65777.67126
+Budget,2021,Mar,3,202103,Rural,Select,477.4065975
+Budget,2021,Mar,3,202103,Urban,Convenience,316968.1736
+Budget,2021,Mar,3,202103,Urban,Extreme,17247.30236
+Budget,2021,Mar,3,202103,Urban,Moderation,741407.0501
+Budget,2021,Mar,3,202103,Urban,Regular,407.0871
+Budget,2021,Mar,3,202103,Youth,Youth,9219.22638
+Budget,2021,Feb,2,202102,Accessory,Accessory,61792.85438
+Budget,2021,Feb,2,202102,Mix,All Season,12587.63814
+Budget,2021,Feb,2,202102,Mix,Productivity,22939.77168
+Budget,2021,Feb,2,202102,Rural,Select,155.8543875
+Budget,2021,Feb,2,202102,Urban,Convenience,152101.8428
+Budget,2021,Feb,2,202102,Urban,Extreme,13603.506
+Budget,2021,Feb,2,202102,Urban,Moderation,342833.917
+Budget,2021,Feb,2,202102,Urban,Regular,465.7926
+Budget,2021,Feb,2,202102,Youth,Youth,4532.28237
+Budget,2021,Jan,1,202101,Accessory,Accessory,52269.26591
+Budget,2021,Jan,1,202101,Mix,All Season,12586.99995
+Budget,2021,Jan,1,202101,Mix,Productivity,18448.3297
+Budget,2021,Jan,1,202101,Rural,Select,318.271065
+Budget,2021,Jan,1,202101,Urban,Convenience,124372.0118
+Budget,2021,Jan,1,202101,Urban,Extreme,17018.94149
+Budget,2021,Jan,1,202101,Urban,Moderation,301269.3815
+Budget,2021,Jan,1,202101,Urban,Regular,402.0915735
+Budget,2021,Jan,1,202101,Youth,Youth,2685.42206
+Budget,2020,Dec,12,202012,Accessory,Accessory,47412.80859
+Budget,2020,Dec,12,202012,Mix,All Season,11442.14474
+Budget,2020,Dec,12,202012,Mix,Productivity,18021.3138
+Budget,2020,Dec,12,202012,Rural,Select,318.271065
+Budget,2020,Dec,12,202012,Urban,Convenience,117052.5485
+Budget,2020,Dec,12,202012,Urban,Extreme,19263.54528
+Budget,2020,Dec,12,202012,Urban,Moderation,241208.9513
+Budget,2020,Dec,12,202012,Urban,Regular,676.1375775
+Budget,2020,Dec,12,202012,Youth,Youth,3628.64376
+Budget,2020,Nov,11,202011,Accessory,Accessory,48633.81311
+Budget,2020,Nov,11,202011,Mix,All Season,14397.6651
+Budget,2020,Nov,11,202011,Mix,Productivity,17094.77186
+Budget,2020,Nov,11,202011,Rural,Select,172.2601125
+Budget,2020,Nov,11,202011,Urban,Convenience,135068.7579
+Budget,2020,Nov,11,202011,Urban,Extreme,45547.95672
+Budget,2020,Nov,11,202011,Urban,Moderation,310303.7463
+Budget,2020,Nov,11,202011,Urban,Regular,440.389845
+Budget,2020,Nov,11,202011,Youth,Youth,3066.217875
+Budget,2020,Oct,10,202010,Accessory,Accessory,56950.6131
+Budget,2020,Oct,10,202010,Mix,All Season,19603.22726
+Budget,2020,Oct,10,202010,Mix,Productivity,21965.27219
+Budget,2020,Oct,10,202010,Rural,Select,643.10442
+Budget,2020,Oct,10,202010,Urban,Convenience,161079.2266
+Budget,2020,Oct,10,202010,Urban,Extreme,78244.92664
+Budget,2020,Oct,10,202010,Urban,Moderation,373242.5082
+Budget,2020,Oct,10,202010,Urban,Regular,3031.192395
+Budget,2020,Oct,10,202010,Youth,Youth,5311.124644
+Budget,2020,Sep,9,202009,Accessory,Accessory,63817.2486
+Budget,2020,Sep,9,202009,Mix,All Season,25815.83293
+Budget,2020,Sep,9,202009,Mix,Productivity,27687.114
+Budget,2020,Sep,9,202009,Rural,Select,344.520225
+Budget,2020,Sep,9,202009,Urban,Convenience,235558.6451
+Budget,2020,Sep,9,202009,Urban,Extreme,12281.52141
+Budget,2020,Sep,9,202009,Urban,Moderation,534276.4723
+Budget,2020,Sep,9,202009,Urban,Regular,667.7592075
+Budget,2020,Sep,9,202009,Youth,Youth,6437.887575
+Budget,2020,Aug,8,202008,Accessory,Accessory,96110.29271
+Budget,2020,Aug,8,202008,Mix,All Season,39389.9341
+Budget,2020,Aug,8,202008,Mix,Productivity,34963.40484
+Budget,2020,Aug,8,202008,Rural,Select,318.271065
+Budget,2020,Aug,8,202008,Urban,Convenience,343268.5292
+Budget,2020,Aug,8,202008,Urban,Extreme,11446.86638
+Budget,2020,Aug,8,202008,Urban,Moderation,746212.561
+Budget,2020,Aug,8,202008,Urban,Regular,668.62656
+Budget,2020,Aug,8,202008,Youth,Youth,9645.04695
+Budget,2020,Jul,7,202007,Accessory,Accessory,60904.31261
+Budget,2020,Jul,7,202007,Mix,All Season,43330.03022
+Budget,2020,Jul,7,202007,Mix,Productivity,16921.11577
+Budget,2020,Jul,7,202007,Rural,Select,311.708775
+Budget,2020,Jul,7,202007,Urban,Convenience,348508.4103
+Budget,2020,Jul,7,202007,Urban,Extreme,14710.3593
+Budget,2020,Jul,7,202007,Urban,Moderation,634640.5502
+Budget,2020,Jul,7,202007,Urban,Regular,1354.789643
+Budget,2020,Jul,7,202007,Youth,Youth,12403.99951
+Budget,2020,Jun,6,202006,Accessory,Accessory,95910.74766
+Budget,2020,Jun,6,202006,Mix,All Season,28697.45156
+Budget,2020,Jun,6,202006,Mix,Productivity,71173.3315
+Budget,2020,Jun,6,202006,Rural,Select,167.338395
+Budget,2020,Jun,6,202006,Urban,Convenience,257019.6494
+Budget,2020,Jun,6,202006,Urban,Extreme,5340.80274
+Budget,2020,Jun,6,202006,Urban,Moderation,645182.8148
+Budget,2020,Jun,6,202006,Urban,Regular,148.08528
+Budget,2020,Jun,6,202006,Youth,Youth,11903.88623
+Budget,2020,May,5,202005,Accessory,Accessory,124717.6981
+Budget,2020,May,5,202005,Mix,All Season,22872.73862
+Budget,2020,May,5,202005,Mix,Productivity,80291.53822
+Budget,2020,May,5,202005,Rural,Select,516.7803375
+Budget,2020,May,5,202005,Urban,Convenience,255062.7929
+Budget,2020,May,5,202005,Urban,Extreme,7842.956888
+Budget,2020,May,5,202005,Urban,Moderation,697296.2236
+Budget,2020,May,5,202005,Urban,Regular,711.4347115
+Budget,2020,May,5,202005,Youth,Youth,7929.789368
+Budget,2020,Apr,4,202004,Accessory,Accessory,95402.9748
+Budget,2020,Apr,4,202004,Mix,All Season,30627.99936
+Budget,2020,Apr,4,202004,Mix,Productivity,84997.04346
+Budget,2020,Apr,4,202004,Rural,Select,157.49496
+Budget,2020,Apr,4,202004,Urban,Convenience,327646.0972
+Budget,2020,Apr,4,202004,Urban,Extreme,11976.3818
+Budget,2020,Apr,4,202004,Urban,Moderation,790160.642
+Budget,2020,Apr,4,202004,Urban,Regular,1056.749873
+Budget,2020,Apr,4,202004,Youth,Youth,10608.83371
+Budget,2020,Mar,3,202003,Accessory,Accessory,94476.14127
+Budget,2020,Mar,3,202003,Mix,All Season,31172.66933
+Budget,2020,Mar,3,202003,Mix,Productivity,65132.79213
+Budget,2020,Mar,3,202003,Rural,Select,467.5631625
+Budget,2020,Mar,3,202003,Urban,Convenience,346996.7374
+Budget,2020,Mar,3,202003,Urban,Extreme,16075.1556
+Budget,2020,Mar,3,202003,Urban,Moderation,713162.972
+Budget,2020,Mar,3,202003,Urban,Regular,387.13185
+Budget,2020,Mar,3,202003,Youth,Youth,9307.872788
+Budget,2020,Feb,2,202002,Accessory,Accessory,56993.40938
+Budget,2020,Feb,2,202002,Mix,All Season,13223.37744
+Budget,2020,Feb,2,202002,Mix,Productivity,22700.81573
+Budget,2020,Feb,2,202002,Rural,Select,168.9789675
+Budget,2020,Feb,2,202002,Urban,Convenience,157979.4357
+Budget,2020,Feb,2,202002,Urban,Extreme,14749.0644
+Budget,2020,Feb,2,202002,Urban,Moderation,356411.4978
+Budget,2020,Feb,2,202002,Urban,Regular,429.9624
+Budget,2020,Feb,2,202002,Youth,Youth,4394.94048
+Budget,2020,Jan,1,202001,Accessory,Accessory,52269.26591
+Budget,2020,Jan,1,202001,Mix,All Season,12227.37138
+Budget,2020,Jan,1,202001,Mix,Productivity,19160.37396
+Budget,2020,Jan,1,202001,Rural,Select,334.67679
+Budget,2020,Jan,1,202001,Urban,Convenience,129397.1436
+Budget,2020,Jan,1,202001,Urban,Extreme,18422.56553
+Budget,2020,Jan,1,202001,Urban,Moderation,289792.4527
+Budget,2020,Jan,1,202001,Urban,Regular,417.29688
+Budget,2020,Jan,1,202001,Youth,Youth,2569.90608

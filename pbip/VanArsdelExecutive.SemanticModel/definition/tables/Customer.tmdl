@@ -1,10 +1,10 @@
 table Customer
-	lineageTag: a604ce4e-bec6-4f6f-9afd-825ad54ff1b2
+	lineageTag: 18d405b1-a1ef-4744-a6b5-3e55571452c8
 
 	column CustomerID
 		dataType: string
 		isHidden
-		lineageTag: 3a38d65d-9ce9-4931-bd6a-514b24d8355d
+		lineageTag: 3431b265-acb8-4f74-9933-adca34ac0bec
 		summarizeBy: none
 		sourceColumn: CustomerID
 
@@ -13,7 +13,7 @@ table Customer
 	column ZipCode
 		dataType: string
 		isHidden
-		lineageTag: 0f6087d8-a43a-4bb8-a5e2-21ab72d10354
+		lineageTag: e6ad279f-9363-435c-a260-09aa13720913
 		summarizeBy: none
 		sourceColumn: ZipCode
 
@@ -21,7 +21,7 @@ table Customer
 
 	column 'Email Name'
 		dataType: string
-		lineageTag: 63ccb90c-59ba-4401-b5c9-9cd57000f279
+		lineageTag: 26dbfac7-2827-4b7d-bf2d-8f3590c3336d
 		summarizeBy: none
 		sourceColumn: Email Name
 

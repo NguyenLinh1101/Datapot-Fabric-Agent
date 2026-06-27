@@ -1,10 +1,9 @@
 table Campaign
-	lineageTag: f0e05c7d-eaa3-4a51-a625-6f09ab2e1a33
+	lineageTag: 41225a2e-a4dc-4ea8-836e-72958519159a
 
 	column CampaignID
 		dataType: int64
-		isHidden
-		lineageTag: 1b41b752-daba-4134-b8f1-27d9512e058b
+		lineageTag: 4fea16eb-defa-4bf7-89c0-3abbb0cdd26d
 		summarizeBy: none
 		sourceColumn: CampaignID
 
@@ -12,7 +11,7 @@ table Campaign
 
 	column 'Traffic Channel'
 		dataType: string
-		lineageTag: bfadca2f-f868-4823-a699-661f476334d2
+		lineageTag: 3d26f307-d4f3-4b66-a754-a05200a9c127
 		summarizeBy: none
 		sourceColumn: TrafficChannel
 
@@ -20,7 +19,7 @@ table Campaign
 
 	column Device
 		dataType: string
-		lineageTag: 1fc7aed2-5aa7-4034-bd5b-5309369e7881
+		lineageTag: ef387762-553f-46f3-bf0f-23fb54e22d8b
 		summarizeBy: none
 		sourceColumn: Device
 

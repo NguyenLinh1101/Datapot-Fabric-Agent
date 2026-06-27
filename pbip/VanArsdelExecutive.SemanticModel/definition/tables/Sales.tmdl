@@ -1,10 +1,10 @@
 table Sales
-	lineageTag: c24db3ec-e3b7-4cf5-a949-fdd853d27c65
+	lineageTag: 1d5d937c-89af-411a-aaa8-38adb179cbf8
 
 	column ProductID
 		dataType: int64
 		isHidden
-		lineageTag: cd24199f-83fa-49ec-8ddf-0d974fb9b2e4
+		lineageTag: 326226a1-358f-422a-90e0-a6a2552ed320
 		summarizeBy: none
 		sourceColumn: ProductID
 
@@ -13,7 +13,7 @@ table Sales
 	column Date
 		dataType: dateTime
 		isHidden
-		lineageTag: 51dd3f7c-f8a0-4a44-b6e1-73828a7509b1
+		lineageTag: d8a2ba67-d539-4a10-869b-8f85f9845d42
 		summarizeBy: none
 		sourceColumn: Date
 
@@ -24,7 +24,7 @@ table Sales
 	column CustomerID
 		dataType: string
 		isHidden
-		lineageTag: b669e997-62f8-492e-9c6c-d312b4538018
+		lineageTag: 7fe204a9-d415-4e7f-9036-f44eba8d42ae
 		summarizeBy: none
 		sourceColumn: CustomerID
 
@@ -33,7 +33,7 @@ table Sales
 	column CampaignID
 		dataType: int64
 		isHidden
-		lineageTag: 90272a19-3685-45c9-a3f4-f26df2c3f134
+		lineageTag: 95c5fdb8-31da-4c0e-8650-f0529c598b35
 		summarizeBy: none
 		sourceColumn: CampaignID
 
@@ -42,7 +42,7 @@ table Sales
 	column Units
 		dataType: int64
 		formatString: #,##0
-		lineageTag: 98038eef-c8d3-469c-aab9-cee5a9869ec8
+		lineageTag: 21eaad34-49f8-4c09-bd87-90c04009deb3
 		summarizeBy: sum
 		sourceColumn: Units
 
