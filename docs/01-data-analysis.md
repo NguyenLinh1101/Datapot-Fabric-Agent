@@ -1,6 +1,6 @@
 # Data Analysis (Data Investigation & Data Quality Assessment)
 
-> Tài liệu này là bước đầu tiên của quá trình phân tích dữ liệu sau Discovery. Mục tiêu là hiểu dataset, đánh giá chất lượng dữ liệu và xác định những giới hạn của dữ liệu trước khi diễn giải nghiệp vụ.
+> Mục tiêu là hiểu dataset, đánh giá chất lượng dữ liệu và xác định những giới hạn của dữ liệu trước khi diễn giải nghiệp vụ.
 
 ---
 
@@ -25,7 +25,7 @@ Bao gồm hai hoạt động:
    - Kiểm tra dữ liệu thiếu, trùng lặp, sai kiểu dữ liệu và các bất thường.
    - Ghi nhận các vấn đề ảnh hưởng đến việc phân tích.
 
-> Dataset chỉ được chuẩn hóa về mặt kỹ thuật trong giai đoạn này. Những vấn đề nghiệp vụ chưa đủ căn cứ sẽ được ghi nhận tại **Data Gap**, không tự ý suy diễn hay chỉnh sửa.
+> Dataset chỉ được chuẩn hóa về mặt kỹ thuật trong giai đoạn này. Những vấn đề nghiệp vụ chưa đủ căn cứ sẽ được ghi nhận tại **Data Gap**.
 
 ---
 
