@@ -20,10 +20,11 @@ README.md           # File này
 
 | # | Tài liệu | Nội dung | Trạng thái |
 |---|---|---|---|
-| 1 | [docs/data-investigation.md](docs/data-investigation.md) | Cấu trúc, quan hệ, profiling từng bảng, quan sát nghiệp vụ, KPI khả thi, Assumptions, câu hỏi cho stakeholder | ✅ Hoàn thành (Bước 1) |
-| 2 | [docs/data-quality-report.md](docs/data-quality-report.md) | Danh sách vấn đề chất lượng dữ liệu, phân loại mức độ, nguyên nhân & khuyến nghị | ✅ Hoàn thành (Bước 1) |
-| 3 | [docs/business-glossary.md](docs/business-glossary.md) | Định nghĩa khái niệm nghiệp vụ VanArsdel (ngôn ngữ stakeholder) | ✅ Hoàn thành (Bước 2) |
-| — | Data Dictionary | Mô tả bảng/cột/quan hệ theo template | ⏳ Bước sau |
+| 1 | [docs/01-data-investigation.md](docs/01-data-investigation.md) | Cấu trúc, quan hệ, profiling từng bảng, quan sát nghiệp vụ, KPI khả thi, Assumptions, câu hỏi cho stakeholder | ✅ Hoàn thành (Bước 1) |
+| 2 | [docs/02-data-quality-report.md](docs/02-data-quality-report.md) | Danh sách vấn đề chất lượng dữ liệu, phân loại mức độ, nguyên nhân & khuyến nghị | ✅ Hoàn thành (Bước 1) |
+| 3 | [docs/03-business-glossary.md](docs/03-business-glossary.md) | Từ điển nghiệp vụ VanArsdel cho Ban lãnh đạo (Concept Map + định nghĩa khái niệm) | ✅ Hoàn thành (Bước 2) |
+| 4 | [docs/04-data-dictionary.md](docs/04-data-dictionary.md) | Mô tả 8 bảng: purpose, grain, PK/FK, quan hệ, từng cột, business rules, assumptions, data gap | ✅ Hoàn thành (Bước 3) |
+| 5 | [docs/05-data-gap.md](docs/05-data-gap.md) | Tổng hợp nội dung cần stakeholder xác nhận (G-1…G-11), phân mức ưu tiên | ✅ Hoàn thành |
 | — | BRD + Report Spec + Mockup | Đặc tả để handoff cho DA | ⏳ Bước sau |
 
 ## Tóm tắt nhanh dữ liệu (từ Bước 1)
