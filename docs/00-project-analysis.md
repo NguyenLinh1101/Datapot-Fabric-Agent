@@ -112,8 +112,8 @@ Các tài liệu sẽ tạo, sắp theo đúng trình tự logic của Business 
 ### BA-05 — Dataset chưa phải sự thật tuyệt đối
 - **Business Assumption:** Dữ liệu có thể chứa lỗi, thiếu, hoặc không nhất quán.
 - **Cơ sở:** Thông lệ BI; chưa có cam kết nào về chất lượng dữ liệu từ khách.
-- **Tác động:** Bắt buộc có bước Data Quality Assessment (02) trước khi xây khái niệm/KPI trên dữ liệu. Nếu bỏ qua, KPI có thể sai mà không ai biết.
-- **Cần xác nhận:** Bước 02 (Data Quality), và xác nhận lại với khách các bất thường.
+- **Tác động:** Bắt buộc có bước Data Analysis (01) trước khi xây khái niệm/KPI trên dữ liệu. Nếu bỏ qua, KPI có thể sai mà không ai biết.
+- **Cần xác nhận:** Bước 01 (Data Analysis), và xác nhận lại với khách các bất thường.
 
 ### BA-06 — Business Analyst phải chủ động khám phá nghiệp vụ từ dữ liệu
 - **Business Assumption:** Vì yêu cầu mơ hồ, BA phải suy ra nghiệp vụ từ cấu trúc dữ liệu rồi đề xuất ngược lại cho khách.
@@ -125,7 +125,7 @@ Các tài liệu sẽ tạo, sắp theo đúng trình tự logic của Business 
 - **Business Assumption:** Mọi điểm chưa rõ được ghi nhận như câu hỏi cho stakeholder thay vì tự kết luận.
 - **Cơ sở:** Nguyên tắc nghề nghiệp BA và yêu cầu "làm rõ" của đề bài.
 - **Tác động:** Giữ tài liệu trung thực và có thể truy vết; tránh đưa giả định thành sự thật. Nếu suy diễn bừa, DA có thể build sai theo niềm tin sai.
-- **Cần xác nhận:** Xuyên suốt; tổng hợp tại Data Gap (05).
+- **Cần xác nhận:** Xuyên suốt; tổng hợp tại Data Gap.
 
 ### BA-08 — Phạm vi nghiệp vụ là Bán hàng & Ngân sách
 - **Business Assumption:** Dashboard xoay quanh kết quả bán hàng và đối chiếu kế hoạch (ngân sách), không mở sang lĩnh vực khác.
