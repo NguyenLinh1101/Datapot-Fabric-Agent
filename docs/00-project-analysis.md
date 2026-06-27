@@ -34,29 +34,34 @@
 | **Làm rõ yêu cầu kinh doanh** | Khách nói "chưa biết rõ cần gì" → việc đầu tiên BA phải làm là biến nhu cầu mơ hồ thành yêu cầu cụ thể, nếu không mọi bước sau đều thiếu nền. |
 | **Chuẩn hóa ngôn ngữ nghiệp vụ** | Nhiều phòng ban (bán hàng, marketing, tài chính) có thể hiểu khác nhau về cùng một thuật ngữ; cần một cách hiểu thống nhất trước khi đo lường. |
 | **Khám phá dữ liệu** | Dữ liệu là nguồn thông tin duy nhất khách cung cấp; phải hiểu dữ liệu nói được gì và **không** nói được gì trước khi hứa hẹn KPI. |
-| **Chuyển nhu cầu thành tài liệu để Data Analyst build dashboard** | Đề bài nêu rõ "mô tả lại để đội kỹ thuật build" → đầu ra của BA là bộ đặc tả, không phải dashboard. |
+| **Chuyển nhu cầu thành bộ tài liệu và dữ liệu sẵn sàng triển khai** | Đầu ra của BA là bộ đặc tả nghiệp vụ hoàn chỉnh. Song song, dataset được chuẩn hóa về mặt kỹ thuật (technical data cleaning) nhằm phục vụ phân tích dữ liệu và triển khai dashboard. Những vấn đề nghiệp vụ chưa đủ căn cứ vẫn được ghi nhận trong Data Gap và chờ stakeholder xác nhận. |
 
 ### 3. Vai trò của Business Analyst trong case study
 
-Trong phạm vi case study này, Business Analyst **không** chịu trách nhiệm chính cho việc phát triển dashboard. Trọng tâm là **tạo bộ tài liệu đặc tả đủ rõ** để Data Analyst triển khai dashboard mà không phải làm rõ lại nhiều yêu cầu.
+Trong case study này, Business Analyst chịu trách nhiệm xuyên suốt từ Discovery đến giai đoạn chuẩn bị triển khai. Công việc bao gồm:
 
-Việc tự xây dashboard Power BI (PBIP/TMDL/PBIR) là **phần mở rộng (Nice to Have)** nhằm **kiểm chứng tính khả thi** của tài liệu — chứng minh đặc tả "build được" trên thực tế — chứ **không** phải deliverable bắt buộc.
+- Làm rõ nghiệp vụ.
+- Khám phá và đánh giá chất lượng dữ liệu.
+- Xây dựng các tài liệu Business Analysis.
+- Chuẩn hóa dữ liệu ở mức kỹ thuật (technical data preparation) phục vụ phân tích và Power BI.
+
+Dashboard Power BI không phải deliverable của giai đoạn Discovery mà là sản phẩm triển khai (Implementation), dùng để xác minh tính đầy đủ và khả thi của toàn bộ bộ tài liệu Business Analysis.
 
 ### 4. Deliverables & thứ tự
 
 Các tài liệu sẽ tạo, sắp theo đúng trình tự logic của Business Analysis:
 
-| # | Tài liệu | Vì sao đặt ở vị trí này |
+| # | Deliverable | Vì sao đặt ở vị trí này |
 |---|---|---|
 | 00 | Project Analysis & BA Approach | Định khung trước khi làm bất cứ gì. |
-| 01 | Data Investigation | Hiểu dữ liệu trước khi diễn giải nghiệp vụ. |
-| 02 | Data Quality Assessment | Biết dữ liệu đáng tin tới đâu trước khi xây khái niệm trên nó. |
-| 03 | Business Glossary | Chuẩn hóa thuật ngữ — nền cho mọi mô tả sau. |
-| 04 | Data Dictionary | Gắn thuật ngữ nghiệp vụ với dữ liệu thực tế để handoff. |
-| 05 | Data Gap | Tách bạch điều đã biết và điều cần khách xác nhận. |
-| 06 | Business Requirements Document | Tổng hợp nhu cầu, KPI, scope ở góc nhìn nghiệp vụ. |
-| 07 | Report Specification | Đặc tả nội dung dashboard để DA build. |
-| 08 | Dashboard Wireframe | Phác layout, hoàn thiện đặc tả trực quan. |
+| 01 | Data Analysis (Data Investigation & Data Quality Assessment) | Hiểu dữ liệu và đánh giá chất lượng dữ liệu trước khi diễn giải nghiệp vụ. |
+| 02 | Business Glossary | Chuẩn hóa thuật ngữ nghiệp vụ. |
+| 03 | Data Dictionary | Gắn thuật ngữ nghiệp vụ với dữ liệu thực tế. |
+| 04 | Data Gap | Tách bạch điều đã biết và điều cần Business xác nhận. |
+| 05 | Business Requirements Document (BRD) | Tổng hợp yêu cầu nghiệp vụ, KPI và phạm vi. |
+| 06 | Report Specification | Đặc tả nội dung dashboard. |
+| 07 | Dashboard Wireframe | Thiết kế bố cục dashboard. |
+| 08 | Power BI Dashboard | Kiểm chứng tính khả thi của toàn bộ tài liệu. |
 
 **Vì sao thứ tự này hợp lý:** mỗi tài liệu là **đầu vào** cho tài liệu kế tiếp. Không thể chuẩn hóa thuật ngữ (03) khi chưa hiểu dữ liệu (01); không thể đặc tả KPI (06) khi chưa biết khoảng trống dữ liệu (05); không thể vẽ wireframe (08) khi chưa có KPI và câu hỏi nghiệp vụ (06–07). Đi sai thứ tự sẽ phải làm lại.
 
@@ -66,10 +71,10 @@ Các tài liệu sẽ tạo, sắp theo đúng trình tự logic của Business 
 - **Phân tích & đặc tả yêu cầu cho Executive Dashboard** 
 - **Khám phá & đánh giá chất lượng dữ liệu bán hàng và ngân sách** 
 - **Chuẩn hóa ngôn ngữ nghiệp vụ** — điều kiện để các bên hiểu thống nhất.
-- **Bộ tài liệu handoff cho Data Analyst** — đầu ra cuối cùng của engagement.
+- **Bộ tài liệu Business Analysis phục vụ triển khai dashboard** — đầu ra cuối cùng của engagement.
 
 **Out of Scope** 
-- **Xây dựng dashboard Power BI như deliverable bắt buộc** — đề bài định vị đây là Nice-to-have.
+- **Dashboard Power BI không phải deliverable bắt buộc của giai đoạn Discovery; chỉ được thực hiện để kiểm chứng tính khả thi của tài liệu.** — đề bài định vị đây là Nice-to-have.
 - **Báo cáo tác nghiệp / chi tiết giao dịch** — Executive Dashboard phục vụ điều hành, không phải vận hành.
 - **Các lĩnh vực ngoài dữ liệu cung cấp** (tồn kho, chuỗi cung ứng, nhân sự, kế toán tài chính) — không có dữ liệu, và nằm ngoài "tình hình kinh doanh" theo nghĩa bán hàng/ngân sách.
 - **Dự báo bằng AI/ML** 
@@ -224,9 +229,8 @@ Dự án thành công khi:
 ```
 Project Analysis & BA Approach
         ↓
-Data Investigation
-        ↓
-Data Quality Assessment
+Data Analysis
+(Data Investigation + Data Quality Assessment)
         ↓
 Business Glossary
         ↓
@@ -240,23 +244,26 @@ Report Specification
         ↓
 Wireframe / Mockup
         ↓
-Power BI Dashboard (Optional)
+Power BI Dashboard
 ```
+> **Lưu ý:** Dataset được chuẩn hóa về mặt kỹ thuật trong quá trình Data Analysis và được lưu trong thư mục `dataset/`. Đây là artifact phục vụ triển khai, không phải tài liệu Business Analysis. Những vấn đề nghiệp vụ chưa đủ căn cứ sẽ không được tự ý chỉnh sửa mà được ghi nhận trong Data Gap để xác nhận với stakeholder.
 
 **Vì sao phải theo trình tự này — nguyên nhân trước–sau:**
 
 1. **Project Analysis** đứng đầu vì phải định khung (mục tiêu, scope, giả định) trước khi tiêu tốn công sức; tránh phân tích lan man sai hướng.
-2. **Data Investigation** trước mọi diễn giải nghiệp vụ, vì dữ liệu là nguồn duy nhất (BA-04) — không hiểu dữ liệu thì không thể nói nó đo được gì.
-3. **Data Quality Assessment** ngay sau đó, vì cần biết dữ liệu đáng tin tới đâu (BA-05) trước khi xây khái niệm/KPI trên nó.
-4. **Business Glossary** trước Data Dictionary, vì phải thống nhất *ý nghĩa nghiệp vụ* trước khi gắn nó vào *cấu trúc dữ liệu*.
-5. **Data Dictionary** nối thuật ngữ nghiệp vụ với dữ liệu thực — là cầu nối kỹ thuật, chỉ làm được sau khi đã có glossary và hiểu dữ liệu.
-6. **Data Gap** tách bạch điều đã biết và điều cần khách xác nhận; phải có trước BRD để BRD không xây trên giả định chưa kiểm.
-7. **BRD** tổng hợp nhu cầu, KPI, scope — chỉ vững khi đã qua các bước hiểu dữ liệu, chuẩn hóa thuật ngữ và xác định khoảng trống.
-8. **Report Specification** cụ thể hóa BRD thành nội dung dashboard; phải có KPI và câu hỏi nghiệp vụ (từ BRD) làm đầu vào.
-9. **Wireframe** hoàn thiện đặc tả trực quan, đặt sau Report Spec vì layout phải phục vụ các KPI/câu hỏi đã chốt.
-10. **Power BI Dashboard** đặt cuối và **tùy chọn**, chỉ để kiểm chứng tính khả thi của đặc tả (BA-10).
+2. **Data Analysis** kết hợp hai hoạt động:
+   - **Data Investigation** để hiểu cấu trúc, ý nghĩa và mối quan hệ của dữ liệu.
+   - **Data Quality Assessment** để đánh giá mức độ đầy đủ, chính xác và nhất quán của dữ liệu trước khi sử dụng.
+3. **Business Glossary** được xây dựng sau khi đã hiểu dữ liệu, nhằm chuẩn hóa thuật ngữ nghiệp vụ trước khi liên kết chúng với dữ liệu thực tế.
+4. **Data Dictionary** nối thuật ngữ nghiệp vụ với các trường dữ liệu thực, tạo cầu nối giữa Business và Technical.
+5. **Data Gap** ghi nhận những thông tin chưa đủ bằng chứng hoặc chưa thể xác nhận từ dataset, làm cơ sở trao đổi với stakeholder trước khi xây dựng yêu cầu nghiệp vụ.
+6. **BRD** tổng hợp yêu cầu, KPI và phạm vi sau khi đã hiểu dữ liệu và xác định các khoảng trống nghiệp vụ.
+7. **Report Specification** chuyển BRD thành đặc tả chi tiết cho dashboard.
+8. **Wireframe** trực quan hóa Report Specification để thống nhất bố cục trước khi phát triển.
+9. **Power BI Dashboard** là bước triển khai nhằm kiểm chứng rằng toàn bộ đặc tả có thể được hiện thực hóa thành sản phẩm hoạt động.
 
 Mỗi bước là đầu vào của bước sau; đảo thứ tự sẽ buộc phải quay lại làm lại — đó là lý do trình tự này được giữ chặt.
 
 ---
-*Tài liệu Discovery. Không phân tích dataset, không định nghĩa KPI, không thiết kế dashboard. Mọi giả định cần được stakeholder xác nhận ở các bước đã nêu.*
+*Tài liệu Discovery.
+Tài liệu này chỉ định hướng cách tiếp cận dự án, chưa thực hiện phân tích dữ liệu, chưa định nghĩa KPI và chưa thiết kế dashboard. Mọi giả định sẽ được kiểm chứng ở các bước tiếp theo.*
