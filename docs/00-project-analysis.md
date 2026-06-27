@@ -2,7 +2,7 @@
 
 > Tài liệu **đầu tiên** của dự án, thuộc giai đoạn **Discovery**. Mục đích: phân tích đề bài, xác định bối cảnh, stakeholder, mục tiêu và các giả định hợp lý **trước khi** Business Analyst bắt đầu bất kỳ hoạt động phân tích dữ liệu nào.
 >
-> Tài liệu này **không** phân tích dataset, **không** định nghĩa KPI, **không** thiết kế dashboard. Mọi giả định ở đây là **giả định**, kèm căn cứ và bước xác nhận — không phải sự thật đã được khách hàng chốt.
+> Mọi giả định ở đây là **giả định**, kèm căn cứ và bước xác nhận — không phải sự thật đã được khách hàng chốt.
 
 ---
 
@@ -10,7 +10,7 @@
 
 ### 1. Bối cảnh
 
-Đề bài (rút gọn từ yêu cầu của VanArsdel):
+Đề bài:
 
 > *"Chúng tôi muốn một dashboard điều hành để theo dõi tình hình kinh doanh, nhưng chưa biết rõ cần gì. Đây là toàn bộ dữ liệu chúng tôi có. Bạn giúp chúng tôi làm rõ yêu cầu và mô tả lại để đội kỹ thuật build."*
 
@@ -19,11 +19,11 @@
 - *"nhưng chưa biết rõ cần gì"* → **yêu cầu chưa được định hình**. Khách hàng biết mục tiêu (theo dõi kinh doanh) nhưng chưa biết cần đo gì, xem gì.
 - *"Đây là toàn bộ dữ liệu chúng tôi có… giúp làm rõ yêu cầu và mô tả lại để đội kỹ thuật build"* → khách hàng có **dữ liệu nhưng chưa có cầu nối** giữa dữ liệu và đội kỹ thuật.
 
-**Vì sao họ tìm đến Business Analyst.** Vấn đề của VanArsdel không phải vấn đề kỹ thuật ("không build được dashboard") mà là vấn đề **làm rõ và đặc tả yêu cầu** ("chưa biết cần gì"). Đây đúng là phần việc của Business Analyst: đứng giữa nghiệp vụ và kỹ thuật, biến nhu cầu mơ hồ thành đặc tả rõ ràng.
+**Vì sao họ tìm đến Business Analyst.** Vấn đề của VanArsdel không phải vấn đề kỹ thuật ("không build được dashboard") mà là vấn đề **làm rõ và đặc tả yêu cầu** ("chưa biết cần gì"). Tóm lại, VanArsdel đang ở tình trạng có dữ liệu nhưng thiếu cầu nối giữa dữ liệu thô và insight kinh doanh — đây chính là khoảng trống mà Business Analyst cần lấp đầy.
 
 **Đây là giai đoạn nào của dự án BI.** Vì yêu cầu chưa được định hình và dữ liệu chưa được khám phá, dự án đang ở **giai đoạn Discovery** — giai đoạn sớm nhất, trước cả Data Investigation. Tài liệu này là sản phẩm mở màn của Discovery.
 
-> *Không suy diễn thêm:* đề bài không nêu ngành con, quy mô, vùng thị trường hay hệ thống hiện có của VanArsdel, nên tài liệu không kết luận các điểm này.
+> Đề bài không nêu ngành con, quy mô, vùng thị trường hay hệ thống hiện có của VanArsdel, nên tài liệu không kết luận các điểm này.
 
 ### 2. Mục tiêu của dự án (engagement)
 
@@ -62,23 +62,23 @@ Các tài liệu sẽ tạo, sắp theo đúng trình tự logic của Business 
 
 ### 5. Phạm vi dự án
 
-**In Scope** *(và vì sao)*
-- **Phân tích & đặc tả yêu cầu cho Executive Dashboard** — đúng yêu cầu khách: "làm rõ yêu cầu và mô tả lại".
-- **Khám phá & đánh giá chất lượng dữ liệu bán hàng và ngân sách** — vì đó là dữ liệu khách cung cấp.
+**In Scope** 
+- **Phân tích & đặc tả yêu cầu cho Executive Dashboard** 
+- **Khám phá & đánh giá chất lượng dữ liệu bán hàng và ngân sách** 
 - **Chuẩn hóa ngôn ngữ nghiệp vụ** — điều kiện để các bên hiểu thống nhất.
 - **Bộ tài liệu handoff cho Data Analyst** — đầu ra cuối cùng của engagement.
 
-**Out of Scope** *(và vì sao)*
+**Out of Scope** 
 - **Xây dựng dashboard Power BI như deliverable bắt buộc** — đề bài định vị đây là Nice-to-have.
 - **Báo cáo tác nghiệp / chi tiết giao dịch** — Executive Dashboard phục vụ điều hành, không phải vận hành.
 - **Các lĩnh vực ngoài dữ liệu cung cấp** (tồn kho, chuỗi cung ứng, nhân sự, kế toán tài chính) — không có dữ liệu, và nằm ngoài "tình hình kinh doanh" theo nghĩa bán hàng/ngân sách.
-- **Dự báo bằng AI/ML** — đề bài không yêu cầu; vượt phạm vi BA.
+- **Dự báo bằng AI/ML** 
 
 ---
 
 ## II. Business Assumptions
 
-> Phần quan trọng nhất. Mỗi giả định gồm: **Cơ sở** · **Tác động tới dự án (kể cả nếu giả định sai)** · **Cần xác nhận ở bước nào**. Đây là giả định, không phải sự thật.
+> Mỗi giả định gồm: **Cơ sở** · **Tác động tới dự án (kể cả nếu giả định sai)** · **Cần xác nhận ở bước nào**. Đây là giả định, không phải sự thật.
 
 ### BA-01 — Dashboard phục vụ Ban lãnh đạo
 - **Business Assumption:** Dashboard được giả định phục vụ Ban lãnh đạo (CEO và các Director).
@@ -156,7 +156,7 @@ Các tài liệu sẽ tạo, sắp theo đúng trình tự logic của Business 
 
 ## III. Stakeholder Analysis
 
-> Đề bài **không nêu tên stakeholder cụ thể**. Danh sách dưới đây được BA **suy ra từ cụm "dashboard điều hành" + bối cảnh bán lẻ với dữ liệu bán hàng & ngân sách**, và là **giả định cần xác nhận ở Discovery** (gắn với BA-01).
+> Danh sách dưới đây được BA **suy ra từ cụm "dashboard điều hành" + bối cảnh bán lẻ với dữ liệu bán hàng & ngân sách**, và là **giả định cần xác nhận ở Discovery** (gắn với BA-01).
 
 ### CEO
 - **Cơ sở:** Executive Dashboard phục vụ cấp ra quyết định cao nhất.
@@ -216,8 +216,6 @@ Dự án thành công khi:
 | **Data Analyst không phải hỏi lại BA nhiều** | Đây là tiêu chí ngầm nêu thẳng trong đề bài; đo trực tiếp chất lượng handoff. |
 | **Dashboard (khi build) phản ánh đúng nhu cầu kinh doanh** | Tài liệu đúng nhưng lệch nhu cầu thực thì vô nghĩa; KPI và câu hỏi phải khớp quyết định của stakeholder. |
 | **Giả định & khoảng trống được ghi nhận minh bạch** | Một bộ tài liệu trung thực (phân biệt rõ điều đã biết vs cần xác nhận) đáng tin hơn một bộ tài liệu "trông hoàn chỉnh" nhưng suy diễn. |
-
-> Lưu ý: thước đo **không** phải "dashboard đẹp", mà là **chất lượng đặc tả và khả năng handoff**.
 
 ---
 
