@@ -25,7 +25,8 @@ README.md           # File này
 | 3 | [docs/03-business-glossary.md](docs/03-business-glossary.md) | Từ điển nghiệp vụ VanArsdel cho Ban lãnh đạo (Concept Map + định nghĩa khái niệm) | ✅ Hoàn thành (Bước 2) |
 | 4 | [docs/04-data-dictionary.md](docs/04-data-dictionary.md) | Mô tả 8 bảng: purpose, grain, PK/FK, quan hệ, từng cột, business rules, assumptions, data gap | ✅ Hoàn thành (Bước 3) |
 | 5 | [docs/05-data-gap.md](docs/05-data-gap.md) | Tổng hợp nội dung cần stakeholder xác nhận (G-1…G-11), phân mức ưu tiên | ✅ Hoàn thành |
-| — | BRD + Report Spec + Mockup | Đặc tả để handoff cho DA | ⏳ Bước sau |
+| 6 | [docs/06-business-requirements-document.md](docs/06-business-requirements-document.md) | BRD: mục đích, stakeholders & quyết định, business questions, KPI nghiệp vụ, assumptions, scope | ✅ Hoàn thành (Bước 4) |
+| — | Report Spec + Mockup | Đặc tả để handoff cho DA | ⏳ Bước sau |
 
 ## Tóm tắt nhanh dữ liệu (từ Bước 1)
 - 2 workbook: **Actuals** (6 sheet, fact `Sales` ~675K dòng, 2015→30/6/2020) và **Budget & Forecast** (wide, 2020–2021).
